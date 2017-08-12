@@ -38,7 +38,7 @@ for tweet in tweets:
     
 print('#boltiot Tweet Liked \n\n#IOT like begins..... ')
 
-for tweet in tweepy.Cursor(api.search,q='#IOT').items(10):
+for tweet in tweepy.Cursor(api.search,q='#IOT').items():
     
     try:
         if(tweet.favorited==False):
